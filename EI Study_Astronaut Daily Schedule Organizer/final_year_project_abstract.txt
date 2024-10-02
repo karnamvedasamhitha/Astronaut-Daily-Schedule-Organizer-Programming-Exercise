@@ -1,0 +1,12 @@
+TITLE : Foolproof Frames: Advanced Detection of Manipulated Images
+
+
+
+The widespread use of deepfake images poses a serious threat to the credibility of visual media, leading to potential harm in societal, political, and individual contexts. Current detection methods are often limited by their inability to generalize across different types of deepfake techniques and image alterations. The challenge lies in developing an advanced detection system that can effectively identify and flag manipulated images across various scenarios and use cases, even as deepfake methods continue to evolve.
+
+
+Source of data set: 
+
+https://www.kaggle.com/datasets/sciarrilli/dfdc-f150
+
+This dataset was created on AWS and used cv2 and dlib to grab frame 150 from all videos and then crop the faces with dlib. The preprocessing ran over the entire dataset of 119,146 videos and some of the videos threw errors on facial detection because no face was detected or the video was too dark. There are 94,147 images total with 77,944 fakes and 16,203 real images. Each frame is cropped to 224x224
